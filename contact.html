@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>اتصل بنا - شركة التكنولوجيا</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="javascript.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">TechCorp</div>
+      <div class="menu-toggle" id="menu-toggle">
+        ☰
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="about.html">من نحن</a></li>
+        <li><a href="services.html">خدماتنا</a></li>
+        <li><a href="contact.html" class="active">اتصل بنا</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero fade-in">
+      <h1>اتصل بنا</h1>
+      <p>نحن هنا لمساعدتكم في تحقيق أهدافكم التقنية</p>
+    </section>
+
+    <section class="contact-section">
+      <div class="grid grid-2">
+        <div class="contact-form">
+          <h2>أرسل لنا رسالة</h2>
+          <form>
+            <div class="form-group">
+              <label for="name">الاسم الكامل</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">البريد الإلكتروني</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">رقم الهاتف</label>
+              <input type="tel" id="phone" name="phone">
+            </div>
+            <div class="form-group">
+              <label for="service">نوع الخدمة المطلوبة</label>
+              <select id="service" name="service" style="width: 100%; padding: 1rem; border: 2px solid #e0e0e0; border-radius: 10px;">
+                <option value="">اختر الخدمة</option>
+                <option value="web">تطوير المواقع</option>
+                <option value="mobile">تطبيقات الجوال</option>
+                <option value="ai">الذكاء الاصطناعي</option>
+                <option value="cloud">الحوسبة السحابية</option>
+                <option value="consulting">استشارات تقنية</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">الرسالة</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">إرسال الرسالة</button>
+          </form>
+        </div>
+
+        <div class="contact-info">
+          <div class="card">
+            <h3>معلومات الاتصال</h3>
+            <div style="margin: 1.5rem 0;">
+              <h4>📍 العنوان</h4>
+              <p>شارع جسر السويس <br>القاهرة , مصر الجديدة</p>
+            </div>
+            <div style="margin: 1.5rem 0;">
+              <h4>📞 الهاتف</h4>
+              <p>01557789144</p>
+            </div>
+            <div style="margin: 1.5rem 0;">
+              <h4>📧 البريد الإلكتروني</h4>
+              <p>info@techcorp.com</p>
+            </div>
+            <div style="margin: 1.5rem 0;">
+              <h4>🕒 ساعات العمل</h4>
+              <p>الأحد - الخميس: 9:00 ص - 6:00 م<br>الجمعة - السبت: مغلق</p>
+            </div>
+          </div>
+
+          <div class="card card-blue mt-2">
+            <h3>تابعنا على وسائل التواصل</h3>
+            <div style="display: flex; gap: 1rem; margin-top: 1rem; justify-content: center;">
+              <a href="#" style="color: white; text-decoration: none; padding: 0.5rem; background: rgba(255,255,255,0.2); border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;">📘</a>
+              <a href="#" style="color: white; text-decoration: none; padding: 0.5rem; background: rgba(255,255,255,0.2); border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;">🐦</a>
+              <a href="#" style="color: white; text-decoration: none; padding: 0.5rem; background: rgba(255,255,255,0.2); border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;">💼</a>
+              <a href="#" style="color: white; text-decoration: none; padding: 0.5rem; background: rgba(255,255,255,0.2); border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;">📷</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="map-section">
+      <h2 class="section-title">موقعنا</h2>
+      <!-- <div class="card" style="height: 300px; background: #f0f0f0; display: flex; align-items: center; justify-content: center; color: #666;"> -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3450.8078086344885!2d31.36433442454789!3d30.128312559096198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzDCsDA3JzQxLjkiTiAzMcKwMjEnMzUuMCJF!5e0!3m2!1sar!2seg!4v1749302255329!5m2!1sar!2seg" width="100%" height="300" style="border-radius: 15px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+
+    <section class="faq">
+      <h2 class="section-title">الأسئلة الشائعة</h2>
+      <div class="grid grid-2">
+        <div class="card">
+          <h3>كم يستغرق تطوير الموقع؟</h3>
+          <p>يعتمد على تعقيد المشروع، لكن عادة ما يستغرق من 2-8 أسابيع للمواقع العادية.</p>
+        </div>
+        <div class="card">
+          <h3>هل تقدمون دعماً بعد التسليم؟</h3>
+          <p>نعم، نقدم دعماً فنياً شاملاً وصيانة دورية لجميع مشاريعنا.</p>
+        </div>
+        <div class="card">
+          <h3>ما هي تكلفة تطوير التطبيق؟</h3>
+          <p>تختلف التكلفة حسب المتطلبات والميزات المطلوبة. نقدم عروض أسعار مخصصة.</p>
+        </div>
+        <div class="card">
+          <h3>هل تعملون مع الشركات الصغيرة؟</h3>
+          <p>بالطبع! نعمل مع جميع أحجام الشركات من الناشئة إلى الكبيرة.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 شركة التكنولوجيا. جميع الحقوق محفوظة.</p>
+  </footer>
+
+  <script>
+    // Simple form handling
+    document.querySelector('form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('شكراً لك! تم إرسال رسالتك بنجاح. سنتواصل معك قريباً.');
+    });
+  </script>
+</body>
+</html>
