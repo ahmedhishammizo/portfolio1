@@ -21,7 +21,7 @@
     width: 100%;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+    /*box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);*/
   }
   
   nav {
@@ -37,6 +37,19 @@
     font-size: 1.5rem;
     font-weight: bold;
     color: #2c3e50;
+  }
+  
+  .logo a{
+	list-style: none;
+	text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+  }
+  
+  .logo a:hover
+  {
+    color: #f39c12;
   }
   
   .nav-links {
@@ -74,19 +87,19 @@
     text-align: center;
     border-radius: 15px;
     margin-bottom: 3rem;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    /*box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);*/
   }
   
   .hero h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    /*text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);*/
   }
   
   .hero p {
     font-size: 1.2rem;
     margin-bottom: 2rem;
-    opacity: 0.9;
+    /*opacity: 0.9;*/
   }
   
   .cta-button {
@@ -97,15 +110,16 @@
     text-decoration: none;
     border-radius: 50px;
     font-weight: bold;
-    transition: all 0.3s ease;
-    box-shadow: 0 5px 15px rgba(243, 156, 18, 0.4);
+    /*transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(243, 156, 18, 0.4);*/
   }
   
   .cta-button:hover {
     background: #e67e22;
     transform: translateY(-2px);
-    box-shadow: 0 7px 20px rgba(243, 156, 18, 0.6);
+    /*box-shadow: 0 7px 20px rgba(243, 156, 18, 0.6);*/
   }
+  
   
   /* Grid Layouts */
   .grid {
@@ -131,14 +145,14 @@
     background: white;
     padding: 2rem;
     border-radius: 15px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    /*box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
-    border: 1px solid rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.05);*/
   }
   
   .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    /*box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);*/
   }
   
   .card h3 {
@@ -314,13 +328,49 @@
     padding: 2rem;
     margin-top: 3rem;
   }
-  
+      
   /* Responsive Design */
+  .menu-toggle {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
   @media (max-width: 768px) {
+	  
+	.menu-toggle {
+    display: block;
+    color: #2c3e50;
+	
+  }
     .nav-links {
       display: none;
-    }
+	  text-align: center;
+	  flex-direction: column;
+      background-color: #fff;
+      position: absolute;
+      top: 100%;
+      width: 100%;
+	  left: 0;
+      padding: 1rem;
     
+	  
+    }         
+	
+	.nav-links.show {
+    display: flex; /* show links when toggled */
+  }
+	
+	.nav-links li {
+    margin-bottom: 1rem;
+  }
+
+  .nav-links a {
+    text-align: right;
+    color: #2c3e50;
+  }
+   nav {
+    position: relative;
+  }
     .hero h1 {
       font-size: 2rem;
     }
