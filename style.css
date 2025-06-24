@@ -330,10 +330,9 @@
   }
       
   /* Responsive Design */
-  .menu-toggle {
-  display: none;
-  font-size: 2rem;
-  cursor: pointer;
+.nav-links {
+  display: flex;
+  gap: 2rem;
 }
   @media (max-width: 768px) {
 	  
