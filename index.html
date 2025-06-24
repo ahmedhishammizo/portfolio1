@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>الرئيسية - شركة التكنولوجيا</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <script src="javascript.js"></script>
 </head>
 <body>
   <header>
     <nav>
       <div class="logo">TechCorp</div>
-      <div class="menu-toggle" id="menu-toggle">☰</div>
-      <ul class="nav-links" id="nav-links">
+      <div class="menu-toggle" id="menu-toggle">
+        ☰
+      </div>
+      <ul class="nav-links" id="nav-links" >
         <li><a href="index.html" class="active">الرئيسية</a></li>
         <li><a href="about.html">من نحن</a></li>
         <li><a href="services.html">خدماتنا</a></li>
@@ -22,27 +25,86 @@
   </header>
 
   <main>
-    <!-- ... باقي المحتوى كما هو ... -->
+    <section class="hero fade-in">
+      <h1>مرحباً بكم في عالم التكنولوجيا</h1>
+      <p>نحن نقدم أفضل الحلول التقنية المبتكرة لتطوير أعمالكم</p>
+      <a href="services.html" class="cta-button">اكتشف خدماتنا</a>
+    </section>
+
+    <section class="services">
+      <h2 class="section-title">خدماتنا المميزة</h2>
+      <div class="grid grid-3">
+        <div class="card card-yellow">
+          <h3>تطوير المواقع</h3>
+          <p>نقوم بتطوير مواقع ويب حديثة وسريعة باستخدام أحدث التقنيات</p>
+        </div>
+        <div class="card card-blue">
+          <h3>تطبيقات الجوال</h3>
+          <p>تطوير تطبيقات الهواتف الذكية لنظامي iOS و Android</p>
+        </div>
+        <div class="card card-yellow">
+          <h3>الذكاء الاصطناعي</h3>
+          <p>حلول الذكاء الاصطناعي وتعلم الآلة لتحسين أعمالكم</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio">
+      <h2 class="section-title">أعمالنا المميزة</h2>
+      <div class="grid grid-4">
+        <div class="image-card">
+          <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop" alt="مشروع 1">
+          <div class="image-overlay">
+            <h4>مشروع التجارة الإلكترونية</h4>
+          </div>
+        </div>
+        <div class="image-card">
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop" alt="مشروع 2">
+          <div class="image-overlay">
+            <h4>تطبيق إدارة المشاريع</h4>
+          </div>
+        </div>
+        <div class="image-card">
+          <img src="https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=400&h=300&fit=crop" alt="مشروع 3">
+          <div class="image-overlay">
+            <h4>نظام إدارة المحتوى</h4>
+          </div>
+        </div>
+        <div class="image-card">
+          <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=400&h=300&fit=crop" alt="مشروع 4">
+          <div class="image-overlay">
+            <h4>منصة التعلم الإلكتروني</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features">
+      <h2 class="section-title">لماذا تختارنا؟</h2>
+      <div class="grid grid-2">
+        <div class="card">
+          <h3>خبرة واسعة</h3>
+          <p>أكثر من 10 سنوات من الخبرة في مجال التكنولوجيا والبرمجة</p>
+        </div>
+        <div class="card">
+          <h3>فريق محترف</h3>
+          <p>فريق من أفضل المطورين والمصممين في المنطقة</p>
+        </div>
+        <div class="card">
+          <h3>دعم فني 24/7</h3>
+          <p>دعم فني متواصل على مدار الساعة لضمان استمرارية عملكم</p>
+        </div>
+        <div class="card">
+          <h3>أسعار تنافسية</h3>
+          <p>أفضل الأسعار في السوق مع جودة عالية في التنفيذ</p>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer>
     <p>&copy; 2025 شركة التكنولوجيا. جميع الحقوق محفوظة.</p>
   </footer>
-
-  <!-- ✅ JavaScript في آخر الصفحة -->
-  <script>
-    window.onload = function () {
-      const toggleBtn = document.getElementById("menu-toggle");
-      const navLinks = document.getElementById("nav-links");
-
-      if (toggleBtn && navLinks) {
-        toggleBtn.addEventListener("click", function () {
-          navLinks.classList.toggle("show");
-        });
-      } else {
-        console.log("المكونات غير موجودة عند تحميل الصفحة");
-      }
-    };
-  </script>
+  
 </body>
 </html>
