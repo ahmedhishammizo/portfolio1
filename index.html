@@ -105,17 +105,15 @@
   <footer>
     <p>&copy; 2025 شركة التكنولوجيا. جميع الحقوق محفوظة.</p>
   </footer>
-  <script>
-   document.addEventListener("DOMContentLoaded", function () {
-  const toggleBtn = document.getElementById("menu-toggle");
-  const navLinks = document.getElementById("nav-links");
+ <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    alert('JS شغال كويس'); // للتأكد من إن JS بيتنفذ
 
-  if (toggleBtn && navLinks) {
-    toggleBtn.addEventListener("click", function () {
-      navLinks.classList.toggle("show");
+    const btn = document.getElementById("menu-toggle");
+    btn.addEventListener("click", function () {
+      alert('تم الضغط');
     });
-  }
-});
-  </script>
+  });
+</script>
 </body>
 </html>
