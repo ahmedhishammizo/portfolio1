@@ -334,42 +334,39 @@
   display: flex;
   gap: 2rem;
 }
-  @media (max-width: 768px) {
-	  
-	.menu-toggle {
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .menu-toggle {
     display: block;
+    font-size: 2rem;
+    cursor: pointer;
     color: #2c3e50;
-	
   }
-    .nav-links {
-      display: none;
-	  text-align: center;
-	  flex-direction: column;
-      background-color: #fff;
-      position: absolute;
-      top: 100%;
-      width: 100%;
-	  left: 0;
-      padding: 1rem;
-    
-	  
-    }         
-	
-	.nav-links.show {
-    display: flex; /* show links when toggled */
-  }
-	
-	.nav-links li {
+
+  .nav-links li {
     margin-bottom: 1rem;
   }
 
-  .nav-links a {
-    text-align: right;
-    color: #2c3e50;
-  }
-   nav {
+  nav {
     position: relative;
   }
+}
     .hero h1 {
       font-size: 2rem;
     }
