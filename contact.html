@@ -140,6 +140,13 @@
       e.preventDefault();
       alert('شكراً لك! تم إرسال رسالتك بنجاح. سنتواصل معك قريباً.');
     });
+    
+    document.addEventListener("DOMContentLoaded", () => {
+    document.getElementById("menu-toggle")?.addEventListener("click", () =>
+      document.getElementById("nav-links")?.classList.toggle("show")
+    );
+  });
+  
   </script>
 </body>
 </html>
